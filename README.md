@@ -6,8 +6,7 @@
 
 **Free IP Purity Detection Tool — 16 Data Sources, One 0-100 Score**
 
-[🌐 立即检测 / Start Check](https://iprisk.top) · [🔍 浏览器环境检测 / Browser Scan](https://iprisk.top/env) · [🤖 Telegram Bot](https://t.me/iprisk_top_bot) · [📖 关于 / About](https://iprisk.top/about)
-
+[🌐 立即检测 / Start Check](https://iprisk.top) · [🔍 浏览器环境检测 / Browser Scan](https://iprisk.top/env) · [🤖 Telegram Bot](https://t.me/iprisk_top_bot) · [📢 频道 / Channel](https://t.me/iprisk_top_channel) · [📖 关于 / About](https://iprisk.top/about)
 
 </div>
 
@@ -49,7 +48,7 @@ Most IP checkers rely on a single data source. But the same IP can be flagged as
 
 | 工具 / Tool | 链接 / URL | 说明 / Description |
 |---|---|---|
-| IP 纯净度检测 | [iprisk.top](https://iprisk.top) | 16 源聚合 IP 风险评分（0-100） / 16-source aggregated IP risk score |
+| IP 纯净度检测 | [iprisk.top](https://iprisk.top) | 16 源聚合 IP 风险评分（0-100）/ 16-source aggregated IP risk score |
 | 浏览器环境检测 | [iprisk.top/env](https://iprisk.top/env) | WebRTC 泄露、DNS 泄露、时区/语言不匹配检测 / WebRTC leak, DNS leak, timezone & language mismatch |
 | 浏览器插件 | [iprisk.top/extension](https://iprisk.top/extension) | Chrome/Edge 插件，实时监测 IP 漂移 / Real-time IP drift alerts |
 | 安全学院 | [iprisk.top/academy](https://iprisk.top/academy) | IP 纯净度、代理类型、账号安全 Q&A / Plain-language Q&A on IP purity and security |

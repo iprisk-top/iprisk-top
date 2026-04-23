@@ -22,13 +22,13 @@ IPRisk.top is a free IP purity detection tool. Enter any IP address — we check
 
 ## 为什么做这个 / Why this exists
 
-市面上的 IP 检测工具大多只引用单一数据源。但同一个 IP，在 ipapi.is 上可能显示是住宅，在 Scamalytics 上可能显示是高风险代理——单源检测会误判。
+市面上的 IP 检测工具大多只查一个数据源。问题是：同一个 IP，A 来源说是住宅，B 来源说是高风险代理——只看一家你根本不知道该信谁。我们的做法很简单：把 16 家数据源的结果全部拉回来，合并去重，给你一个综合评分和每个来源的具体标签。一眼看清全貌，不用自己一个个查。
 
-我们做的事情很简单：**把 16 家数据源的结果都拉回来，合并去重，给你一个综合评分和具体的标签来源**。
+这个工具最初是给自己用的——我们在被 Claude 封号、ChatGPT 降智的问题上踩过坑，查了半天才发现根源是 IP 不干净，账号本身没毛病。
 
-这个工具最初是为自己做的——我们自己在被 Claude 封号、ChatGPT 降智的问题上踩过坑，发现根源常常是 IP 纯净度不够，而不是"账号本身有问题"。
+Most IP checkers only query a single data source. The problem is: the same IP can show up as "residential" on one source and "high-risk proxy" on another — with just one source, you have no idea which to trust. What we do is simple: pull results from all 16 sources, deduplicate, and give you one aggregate score with per-source tags. Full picture at a glance, no need to check them one by one.
 
-Most IP checkers rely on a single data source. But the same IP can be flagged as residential on one platform and as a high-risk proxy on another — single-source checks mislead people. We pull results from all 16 sources, deduplicate, and give you one aggregate score plus transparent per-source attribution. This tool was originally built for ourselves — we've been burned by Claude bans and ChatGPT throttling, and realized the root cause was usually IP purity, not the account itself.
+This tool was originally built for ourselves — we got burned by Claude bans and ChatGPT throttling, and after digging around, realized the root cause was a dirty IP, not the account itself.
 
 ---
 

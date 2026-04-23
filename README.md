@@ -102,12 +102,6 @@ Embed IP purity scores on your website, blog, or README. One line of code.
 [![IPRisk](https://iprisk.top/badge/YOUR_IP)](https://iprisk.top/ip/YOUR_IP)
 ```
 
-### Shields.io 端点
-
-```markdown
-[![IPRisk](https://img.shields.io/endpoint?url=https://iprisk.top/badge/shields/YOUR_IP&style=flat-square)](https://iprisk.top/ip/YOUR_IP)
-```
-
 ### 信任印章 / Trust Seal
 
 [![IP Verified](https://iprisk.top/badge/trust-seal.svg)](https://iprisk.top)

@@ -72,3 +72,73 @@ Each check fires parallel requests to 16 independent sources. Signals are dedupl
 
 ## 数据来源 / Data Sources
 
+| 类型 / Type | 说明 / Description | 示例 / Examples |
+|---|---|---|
+| 商业风控 API | 专业的 IP 欺诈评分服务 | Scamalytics, IPQualityScore, proxycheck.io |
+| 威胁情报 | 安全社区的 IP 信誉数据 | AbuseIPDB, Pulsedive, GreyNoise, DShield |
+| ASN / 地理数据库 | IP 归属和地理位置 | ip-api.com, ipapi.is, IP2Location |
+| 黑名单 / DNSBL | 已知恶意 IP 清单 | Spamhaus, SORBS, Barracuda |
+| 匿名网络 | Tor / 代理节点公开列表 | TorProject exit list, VPN detection feeds |
+
+---
+
+## 🏷️ 嵌入徽章 / Embed Badge
+
+在你的网站、博客或 README 中展示 IP 纯净度评分，每个嵌入 = 一条指向 IPRisk.top 的外链。
+
+Embed IP purity scores on your website, blog, or README. Each embed = a backlink to IPRisk.top.
+
+### SVG 徽章 / Badge
+
+[![IPRisk](https://iprisk.top/badge/1.1.1.1)](https://iprisk.top/ip/1.1.1.1)
+
+```html
+<a href="https://iprisk.top/ip/YOUR_IP" target="_blank">
+  <img src="https://iprisk.top/badge/YOUR_IP" alt="IPRisk Score" />
+</a>
+```
+
+```markdown
+[![IPRisk](https://iprisk.top/badge/YOUR_IP)](https://iprisk.top/ip/YOUR_IP)
+```
+
+### Shields.io 端点
+
+```markdown
+[![IPRisk](https://img.shields.io/endpoint?url=https://iprisk.top/badge/shields/YOUR_IP&style=flat-square)](https://iprisk.top/ip/YOUR_IP)
+```
+
+### 信任印章 / Trust Seal
+
+[![IP Verified](https://iprisk.top/badge/trust-seal.svg)](https://iprisk.top)
+
+```html
+<a href="https://iprisk.top" target="_blank">
+  <img src="https://iprisk.top/badge/trust-seal.svg" width="160" />
+</a>
+```
+
+### 分享卡片 / Share Card (1200×630)
+
+适合 Telegram / 社交媒体分享 / For Telegram & social media sharing:
+
+```
+https://iprisk.top/badge/card/YOUR_IP
+```
+
+📖 完整嵌入文档 / Full embed guide: [iprisk.top/badge/doc](https://iprisk.top/badge/doc)
+
+---
+
+## 🔗 社区与链接 / Community & Links
+
+- 🌐 [IPRisk.top](https://iprisk.top)
+- 🔍 [浏览器环境检测](https://iprisk.top/env)
+- 📖 [安全学院 Q&A](https://iprisk.top/academy)
+- 📝 [关于 IPRisk.top](https://iprisk.top/about)
+- 🤖 [Telegram Bot — 发送 IP 即查纯净度](https://t.me/iprisk_top_bot)
+- 📢 [Telegram 频道 — 安全上网指南](https://t.me/iprisk_top_channel)
+
+---
+
+*欢迎提交 PR 补充更多工具和资源。/ PRs welcome to add more tools and resources.*

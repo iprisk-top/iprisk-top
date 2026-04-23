@@ -84,9 +84,9 @@ Each check fires parallel requests to 16 independent sources. Signals are dedupl
 
 ## 🏷️ 嵌入徽章 / Embed Badge
 
-在你的网站、博客或 README 中展示 IP 纯净度评分，每个嵌入 = 一条指向 IPRisk.top 的外链。
+在你的网站、博客或 README 中展示 IP 纯净度评分，一行代码嵌入。
 
-Embed IP purity scores on your website, blog, or README. Each embed = a backlink to IPRisk.top.
+Embed IP purity scores on your website, blog, or README. One line of code.
 
 ### SVG 徽章 / Badge
 

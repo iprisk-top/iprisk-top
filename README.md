@@ -57,9 +57,9 @@ This tool was originally built for ourselves — we got burned by Claude bans an
 
 ## 评分怎么算 / How the score works
 
-每次检测同时向 16 个独立来源发起请求，包括威胁情报、商业风控 API、开源 ASN 数据库、IP 地理库、Tor/代理节点公开黑名单等。每个来源返回的信号会映射为加分或扣分，最终合并成 0-100 的评分。检测结果至少需要 10 个数据源成功返回才会入库，12 源以上才会缓存。
+每次检测同时向 16 个独立来源发起请求，包括威胁情报、商业风控 API、开源 ASN 数据库、IP 地理库、Tor/代理节点公开黑名单等。每个来源返回的信号会映射为加分或扣分，最终合并成 0-100 的评分。
 
-Each check fires parallel requests to 16 independent sources. Signals are deduplicated and combined into a 0–100 score. A result is only persisted when at least 10 sources return successfully, and only cached when 12+ succeed.
+Each check fires parallel requests to 16 independent sources. Signals are deduplicated and combined into a 0–100 score. 
 
 | 分数 / Score | 含义 / Meaning |
 |---|---|

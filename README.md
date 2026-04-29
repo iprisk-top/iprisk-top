@@ -63,10 +63,12 @@ Each check fires parallel requests to 16 independent sources. Signals are dedupl
 
 | 分数 / Score | 含义 / Meaning |
 |---|---|
-| 90-100 | 🟢 纯净住宅 / 干净 ISP — 适合所有平台 / Clean residential — safe for all platforms |
-| 70-89 | 🟢 轻微标记 — 普通用途可以，敏感账号需小心 / Minor flags — fine for general use |
-| 40-69 | 🟡 明显代理/机房特征 — 易触发二次验证 / Clear proxy/DC signals — likely triggers 2FA |
-| 0-39 | 🔴 高风险 — 多源认定已知滥用，不建议使用 / High risk — flagged by multiple sources, avoid |
+| 85-100 | 🟢 高纯净 — ChatGPT·Claude·TikTok·亚马逊放心用 / Clean — safe for all platforms |
+| 70-84 | 🟢 可用 — 日常够用，严格平台偶尔弹验证码 / Usable — strict sites may CAPTCHA |
+| 55-69 | 🟡 有风险 — 部分平台已标记，建议更换 / Risky — flagged by some platforms, consider switching |
+| 40-54 | 🟠 严重污染 — 不适合需要信誉的操作 / Tainted — not for trust-sensitive use |
+| 20-39 | 🔴 黑名单 — 已上多个黑名单，立即更换 / Blacklisted — replace immediately |
+| 0-19 | 🔴 高危 — 关联恶意活动，任何网站都会封杀 / Fatal — malicious activity linked, blocked everywhere |
 
 ---
 

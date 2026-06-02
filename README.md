@@ -52,6 +52,7 @@ This tool was originally built for ourselves — we got burned by Claude bans an
 | 浏览器环境检测 | [iprisk.top/env](https://iprisk.top/env) | WebRTC 泄露、DNS 泄露、时区/语言不匹配检测 / WebRTC leak, DNS leak, timezone & language mismatch |
 | 浏览器插件 | [iprisk.top/extension](https://iprisk.top/extension) | Chrome/Edge 插件，实时监测 IP 漂移 / Real-time IP drift alerts |
 | 安全学院 | [iprisk.top/academy](https://iprisk.top/academy) | IP 纯净度、代理类型、账号安全 Q&A / Plain-language Q&A on IP purity and security |
+| 代理方案推荐 | [iprisk.top/proxy](https://iprisk.top/proxy) | 住宅代理 / VPS / 指纹浏览器推荐，用 IPRisk 验证 IP 纯净度 / Proxy provider guide with IPRisk verification |
 
 ---
 
@@ -134,7 +135,7 @@ https://iprisk.top/badge/card/YOUR_IP
 - 📝 [关于 IPRisk.top](https://iprisk.top/about)
 - 🤖 [Telegram Bot — 发送 IP 即查纯净度](https://t.me/iprisk_top_bot)
 - 📢 [Telegram 频道 — 安全上网指南](https://t.me/iprisk_top_channel)
-
+- 🛡️ [代理方案推荐 / Proxy Guide](https://iprisk.top/proxy)
 ---
 
 *欢迎提交 PR 补充更多工具和资源。/ PRs welcome to add more tools and resources.*

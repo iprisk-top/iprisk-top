@@ -2,11 +2,11 @@
 
 # 🛡️ IPRisk.top
 
-**免费 IP 纯净度检测工具 — 聚合 16 个独立数据源，一键生成 0-100 评分**
+**免费 IP 纯净度检测工具 — 聚合 16 类独立数据源，一键生成 0-100 参考评分**
 
-**Free IP Purity Detection Tool — 16 Data Sources, One 0-100 Score**
+**Free IP Reputation Checker — 16 Data Source Categories, One 0-100 Reference Score**
 
-[🌐 立即检测 / Start Check](https://iprisk.top) · [🔍 浏览器环境检测 / Browser Scan](https://iprisk.top/env) · [🤖 Telegram Bot](https://t.me/iprisk_top_bot) · [📢 频道 / Channel](https://t.me/iprisk_top_channel) · [📖 关于 / About](https://iprisk.top/about)
+[🌐 立即检测 / Start Check](https://iprisk.top) · [🔍 浏览器环境检测 / Browser Scan](https://iprisk.top/env) · [🧩 浏览器插件 / Extension](https://iprisk.top/extension) · [🛡️ 代理方案 / Proxy Guide](https://iprisk.top/proxy) · [🤖 Telegram Bot](https://t.me/iprisk_top_bot)
 
 </div>
 
@@ -14,33 +14,35 @@
 
 ## 这是什么 / What is this
 
-IPRisk.top 是一个免费的 IP 纯净度检测工具。输入任意 IP，同时查询 16 个独立的安全数据库，合并出一个 0-100 的纯净度评分，告诉你这个 IP 是不是机房、是不是在黑名单、适不适合登 ChatGPT / Claude / TikTok / 亚马逊这类对 IP 敏感的平台。
+IPRisk.top 是一个免费的 IP 纯净度检测工具。输入任意公网 IP，即可查询网络类型、代理/VPN/Tor 信号、黑名单、ASN、地理归属、威胁情报、端口暴露和历史风险记录，并合并为一个 0-100 的纯净度参考评分。
 
-IPRisk.top is a free IP purity detection tool. Enter any IP address — we check it against 16 independent security databases simultaneously, then produce a single 0–100 purity score with transparent per-source attribution. Know instantly whether an IP is datacenter, blacklisted, or safe for IP-sensitive platforms like ChatGPT, Claude, TikTok, and Amazon.
+IPRisk.top is a free IP reputation checker. Enter any public IP address to review network type, proxy/VPN/Tor signals, blacklists, ASN, geolocation, threat intelligence, port exposure, and historical risk records, then combine them into a 0-100 reference score.
+
+评分用于帮助你判断一个 IP 当前可观察到的网络信誉信号，适合用于代理、VPS、固定 IP、浏览器环境和跨境业务前的排查。它不是任何第三方平台的放行、登录、注册、付款或流量结果保证。
+
+The score helps you understand currently observable IP reputation signals before using a proxy, VPS, fixed IP, browser profile, or cross-border workflow. It is not an approval, login, registration, payment, or traffic guarantee from any third-party platform.
 
 ---
 
 ## 为什么做这个 / Why this exists
 
-市面上的 IP 检测工具大多只查一个数据源。问题是：同一个 IP，A 来源说是住宅，B 来源说是高风险代理——只看一家你根本不知道该信谁。我们的做法很简单：把 16 家数据源的结果全部拉回来，合并去重，给你一个综合评分和每个来源的具体标签。一眼看清全貌，不用自己一个个查。
+市面上的 IP 检测工具大多只查一个数据源。问题是：同一个 IP，A 来源可能标记为住宅，B 来源可能标记为代理或机房。只看一家，很难判断分歧来自数据延迟、网络归属变化，还是 IP 本身存在历史污染。
 
-这个工具最初是给自己用的——我们在被 Claude 封号、ChatGPT 降智的问题上踩过坑，查了半天才发现根源是 IP 不干净，账号本身没毛病。
+IPRisk 的做法是把多个来源的结果集中到同一份报告里：保留每个来源的原始标签，同时对代理、VPN、Tor、黑名单、欺诈评分、网段邻居质量、BGP、端口和威胁情报做加权汇总。用户可以先看总分，再展开来源明细复核原因。
 
-Most IP checkers only query a single data source. The problem is: the same IP can show up as "residential" on one source and "high-risk proxy" on another — with just one source, you have no idea which to trust. What we do is simple: pull results from all 16 sources, deduplicate, and give you one aggregate score with per-source tags. Full picture at a glance, no need to check them one by one.
-
-This tool was originally built for ourselves — we got burned by Claude bans and ChatGPT throttling, and after digging around, realized the root cause was a dirty IP, not the account itself.
+Most IP checkers rely on one source. The same IP may be labeled residential by one database and proxy or datacenter by another. IPRisk puts multiple source findings into one report: source-level labels remain visible, while proxy, VPN, Tor, blacklist, fraud score, subnet quality, BGP, port exposure, and threat intelligence are aggregated into a weighted score.
 
 ---
 
 ## 适合谁用 / Who it's for
 
-| 用户群 / User Group | 痛点 / Pain Point |
+| 用户群 / User Group | 适合解决的问题 / Use Case |
 |---|---|
-| 🤖 **AI 用户** — ChatGPT / Claude / Gemini | 登录前确认 IP 不是机房或脏代理，降低降智和封号概率 / Verify exit IP before login to reduce throttling and bans |
-| 🛒 **跨境电商卖家** — 亚马逊 / Shopee / eBay | 给每个店铺挑纯净度高的独立住宅 IP，避免关联封店 / Pick high-purity residential IPs per store to avoid account-linking bans |
-| 📱 **TikTok / 社媒运营** | IP / 时区 / 语言三件套里，IP 是最容易被忽视的一环 / IP is the most overlooked piece among IP/timezone/language consistency |
-| 🔧 **技术爱好者 / 自建梯子** | 买 VPS 前先查目标 IP 段纯不纯净，省得上线才发现段脏 / Check target IP ranges before VPS purchase |
-| 🕵️ **指纹浏览器用户** — AdsPower / Multilogin | 验证每个 profile 挂的代理 IP 在 16 源下的真实表现 / Validate real 16-source reputation of proxy IPs behind each profile |
+| 🤖 **AI 用户** — ChatGPT / Claude / Gemini | 使用前核对出口地区、IP 类型和代理/黑名单信号 / Review exit region, IP type, and proxy/blacklist signals before use |
+| 🛒 **跨境电商卖家** — Amazon / Shopee / eBay | 为店铺或浏览器环境记录固定出口、网络类型和风险来源 / Record fixed exits, network type, and risk evidence for each workspace |
+| 📱 **TikTok / 社媒运营** | 同时排查 IP、DNS、WebRTC、时区和语言是否一致 / Check IP, DNS, WebRTC, timezone, and language consistency |
+| 🔧 **VPS / 固定 IP 用户** | 购买前后核对 ASN、机房属性、端口暴露和历史风险 / Review ASN, datacenter signals, exposed ports, and history before or after purchase |
+| 🕵️ **指纹浏览器用户** — AdsPower / Multilogin | 验证每个 profile 使用的代理或固定出口当前表现 / Validate current reputation of proxies or fixed exits used by each profile |
 
 ---
 
@@ -48,40 +50,59 @@ This tool was originally built for ourselves — we got burned by Claude bans an
 
 | 工具 / Tool | 链接 / URL | 说明 / Description |
 |---|---|---|
-| IP 纯净度检测 | [iprisk.top](https://iprisk.top) | 16 源聚合 IP 风险评分（0-100）/ 16-source aggregated IP risk score |
-| 浏览器环境检测 | [iprisk.top/env](https://iprisk.top/env) | WebRTC 泄露、DNS 泄露、时区/语言不匹配检测 / WebRTC leak, DNS leak, timezone & language mismatch |
-| 浏览器插件 | [iprisk.top/extension](https://iprisk.top/extension) | Chrome/Edge 插件，实时监测 IP 漂移 / Real-time IP drift alerts |
-| 安全学院 | [iprisk.top/academy](https://iprisk.top/academy) | IP 纯净度、代理类型、账号安全 Q&A / Plain-language Q&A on IP purity and security |
-| 代理方案推荐 | [iprisk.top/proxy](https://iprisk.top/proxy) | 住宅代理 / VPS / 指纹浏览器推荐，用 IPRisk 验证 IP 纯净度 / Proxy provider guide with IPRisk verification |
+| IP 纯净度检测 | [iprisk.top](https://iprisk.top) | 16 类来源聚合 IP 信誉评分（0-100）/ 16-source-category IP reputation score |
+| 浏览器环境检测 | [iprisk.top/env](https://iprisk.top/env) | WebRTC、DNS、时区、语言、国内外出口与浏览器指纹检测 / WebRTC, DNS, timezone, language, route, and browser signal scan |
+| 浏览器插件 | [iprisk.top/extension](https://iprisk.top/extension) | Chrome/Edge 插件，持续比对出口 IP、DNS 与 WebRTC 基准 / Chrome/Edge extension for exit IP, DNS, and WebRTC baseline monitoring |
+| 代理方案参考 | [iprisk.top/proxy](https://iprisk.top/proxy) | 按 AI、电商、社媒和固定出口场景整理代理/VPS/环境工具 / Proxy, VPS, and browser-environment options organized by use case |
+| 安全学院 | [iprisk.top/academy](https://iprisk.top/academy) | IP 信誉、代理类型、DNS/WebRTC 泄露和环境排查指南 / Guides for IP reputation, proxy types, DNS/WebRTC leaks, and environment checks |
 
 ---
 
 ## 评分怎么算 / How the score works
 
-每次检测同时向 16 个独立来源发起请求，包括威胁情报、商业风控 API、开源 ASN 数据库、IP 地理库、Tor/代理节点公开黑名单等。每个来源返回的信号会映射为加分或扣分，最终合并成 0-100 的评分。
+每次检测会同时查询多个独立来源，包括网络属性、商业风控、威胁情报、Tor/代理识别、黑名单、ASN/BGP、地理位置、端口暴露和网段信誉信号。网络类型决定基础上限，代理、VPN、Tor、黑名单、欺诈、滥用、端口和网段邻居质量会继续影响最终分数。
 
-Each check fires parallel requests to 16 independent sources. Signals are deduplicated and combined into a 0–100 score. 
+Each check queries independent source categories covering network classification, commercial fraud signals, threat intelligence, Tor/proxy detection, blacklists, ASN/BGP, geolocation, port exposure, and subnet reputation. Network type sets the base ceiling, while proxy, VPN, Tor, blacklist, fraud, abuse, port, and subnet-neighbor signals adjust the final score.
 
 | 分数 / Score | 含义 / Meaning |
 |---|---|
-| 85-100 | 🟢 高纯净 — ChatGPT·Claude·TikTok·亚马逊放心用 / Clean — safe for all platforms |
-| 70-84 | 🟢 可用 — 日常够用，严格平台偶尔弹验证码 / Usable — strict sites may CAPTCHA |
-| 55-69 | 🟡 有风险 — 部分平台已标记，建议更换 / Risky — flagged by some platforms, consider switching |
-| 40-54 | 🟠 严重污染 — 不适合需要信誉的操作 / Tainted — not for trust-sensitive use |
-| 20-39 | 🔴 黑名单 — 已上多个黑名单，立即更换 / Blacklisted — replace immediately |
-| 0-19 | 🔴 高危 — 关联恶意活动，任何网站都会封杀 / Fatal — malicious activity linked, blocked everywhere |
+| 85-100 | 🟢 风险信号较少，通常为住宅、移动、多源 ISP 或非常干净的企业网络 / Few risk signals, usually residential, mobile, multi-source ISP, or very clean business networks |
+| 70-84 | 🟢 整体信号较少，存在个别需要确认的项目 / Generally low signal count, with a few items worth checking |
+| 55-69 | 🟡 存在多项风险或网络属性信号，建议查看扣分原因 / Multiple risk or network-attribute signals; review deductions |
+| 40-54 | 🟠 多个来源出现负面记录，需要进一步核对 / Negative records from multiple sources; further review needed |
+| 20-39 | 🔴 风险信号集中，使用前应核对黑名单和代理记录 / Concentrated risk signals; review blacklist and proxy records before use |
+| 0-19 | 🔴 检测到大量高权重风险信号，不建议仅凭分数判断原因 / Many high-weight risk signals; do not rely on the score alone to identify the cause |
+
+### 干净 IP 的类型参考 / Clean-IP Type Reference
+
+| 类型 / Type | 干净时建议分 / Clean-score range |
+|---|---:|
+| 真实住宅宽带，多源确认 / Real residential broadband, multi-source confirmed | 100 |
+| 多源 ISP/运营商确认，无污染 / Multi-source ISP confirmed, no contamination | 95-100 |
+| 移动网络，干净 / Clean mobile network | 96-100 |
+| Static residential / ISP proxy | 90-97 |
+| 企业/Business 干净 IP / Clean business IP | 75-88 |
+| 普通机房干净 IP / Clean generic datacenter IP | 45-65 |
+| 已知 VPN / Known VPN | 20-50 |
+| 已知 Proxy/Open Proxy / Known proxy or open proxy | 0-35 |
+| Tor/恶意/多黑名单 / Tor, malicious, or multiple blacklist matches | 0-10 |
 
 ---
 
 ## 数据来源 / Data Sources
 
-| 类型 / Type | 说明 / Description | 示例 / Examples |
-|---|---|---|
-| 商业风控 API | 专业的 IP 欺诈评分服务 | Scamalytics, IPQualityScore, proxycheck.io |
-| 威胁情报 | 安全社区的 IP 信誉数据 | AbuseIPDB, Pulsedive, GreyNoise, DShield |
-| ASN / 地理数据库 | IP 归属和地理位置 | ip-api.com, ipapi.is, IP2Location |
-| 黑名单 / DNSBL | 已知恶意 IP 清单 | Spamhaus, SORBS, Barracuda |
-| 匿名网络 | Tor / 代理节点公开列表 | TorProject exit list, VPN detection feeds |
+| 类型 / Type | 当前使用的来源 / Current Sources |
+|---|---|
+| IP 类型与地理位置 / Network type & geolocation | ipapi.is, ip-api.com, ipinfo.io, IP2Location, proxycheck.io |
+| ASN / BGP / 网段 / ASN, BGP & prefix | RIPE STAT, ipapi.is, proxycheck.io |
+| 代理 / VPN / Tor / Proxy, VPN & Tor | proxycheck.io, TorProject, ipapi.is, ip-api.com, IP2Location, Scamalytics, Maltiverse |
+| 威胁情报 / Threat intelligence | Pulsedive, ThreatFox, DShield, Maltiverse |
+| 黑名单与滥用 / Blacklists & abuse | DNSBL, Blocklist.de, DShield, Scamalytics |
+| 端口与共享暴露 / Port & shared-host exposure | Shodan, HackerTarget |
+
+不同来源的结果可能有延迟或分歧。IPRisk 会保留来源明细，方便用户查看每个结论来自哪里。
+
+Sources may disagree or update at different times. IPRisk keeps source-level details visible so users can review where each signal came from.
 
 ---
 
@@ -89,7 +110,7 @@ Each check fires parallel requests to 16 independent sources. Signals are dedupl
 
 在你的网站、博客或 README 中展示 IP 纯净度评分，一行代码嵌入。
 
-Embed IP purity scores on your website, blog, or README. One line of code.
+Embed IP reputation scores on your website, blog, or README. One line of code.
 
 ### SVG 徽章 / Badge
 
@@ -119,7 +140,7 @@ Embed IP purity scores on your website, blog, or README. One line of code.
 
 适合 Telegram / 社交媒体分享 / For Telegram & social media sharing:
 
-```
+```text
 https://iprisk.top/badge/card/YOUR_IP
 ```
 
@@ -131,11 +152,13 @@ https://iprisk.top/badge/card/YOUR_IP
 
 - 🌐 [IPRisk.top](https://iprisk.top)
 - 🔍 [浏览器环境检测](https://iprisk.top/env)
+- 🧩 [浏览器插件 IPRisk Sentinel](https://iprisk.top/extension)
+- 🛡️ [代理方案参考 / Proxy Guide](https://iprisk.top/proxy)
 - 📖 [安全学院 Q&A](https://iprisk.top/academy)
 - 📝 [关于 IPRisk.top](https://iprisk.top/about)
 - 🤖 [Telegram Bot — 发送 IP 即查纯净度](https://t.me/iprisk_top_bot)
-- 📢 [Telegram 频道 — 安全上网指南](https://t.me/iprisk_top_channel)
-- 🛡️ [代理方案推荐 / Proxy Guide](https://iprisk.top/proxy)
+- 📢 [Telegram 频道 — IP 情报与网络排查](https://t.me/iprisk_top_channel)
+
 ---
 
 *欢迎提交 PR 补充更多工具和资源。/ PRs welcome to add more tools and resources.*

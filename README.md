@@ -2,11 +2,11 @@
 
 # 🛡️ IPRisk.top
 
-**免费 IP 纯净度检测工具 — 聚合 16 类独立数据源，一键生成 0-100 参考评分**
+**免费 IP 纯净度检测工具 — 16 个独立来源交叉检测，一键生成 0-100 参考评分**
 
-**Free IP Reputation Checker — 16 Data Source Categories, One 0-100 Reference Score**
+**Free IP Reputation Checker — 16 Independent Sources, One 0-100 Reference Score**
 
-[🌐 立即检测 / Start Check](https://iprisk.top) · [🔍 浏览器环境检测 / Browser Scan](https://iprisk.top/env) · [🧩 浏览器插件 / Extension](https://iprisk.top/extension) · [🛡️ 代理方案 / Proxy Guide](https://iprisk.top/proxy) · [🤖 Telegram Bot](https://t.me/iprisk_top_bot)
+[🌐 立即检测 / Start Check](https://iprisk.top) · [🔍 环境检测 / Browser Scan](https://iprisk.top/env) · [🧩 浏览器插件 / Extension](https://iprisk.top/extension) · [🛡️ 代理方案 / Proxy Guide](https://iprisk.top/proxy) · [📊 批量查询 / Batch](https://iprisk.top/batch) · [🔌 API](https://iprisk.top/api) · [🖥️ 控制台 / Console](https://iprisk.top/console)
 
 </div>
 
@@ -50,11 +50,27 @@ Most IP checkers rely on one source. The same IP may be labeled residential by o
 
 | 工具 / Tool | 链接 / URL | 说明 / Description |
 |---|---|---|
-| IP 纯净度检测 | [iprisk.top](https://iprisk.top) | 16 类来源聚合 IP 信誉评分（0-100）/ 16-source-category IP reputation score |
-| 浏览器环境检测 | [iprisk.top/env](https://iprisk.top/env) | WebRTC、DNS、时区、语言、国内外出口与浏览器指纹检测 / WebRTC, DNS, timezone, language, route, and browser signal scan |
+| IP 纯净度检测 | [iprisk.top](https://iprisk.top) | 16 个独立来源交叉检测 IP 纯净度评分（0-100）/ Cross-checks 16 independent sources for a 0-100 IP reputation score |
+| 浏览器环境检测 | [iprisk.top/env](https://iprisk.top/env) | 出口 IP、WebRTC、DNS、时区、语言与浏览器环境一致性检测 / Exit IP, WebRTC, DNS, timezone, language, and browser-environment consistency checks |
 | 浏览器插件 | [iprisk.top/extension](https://iprisk.top/extension) | Chrome/Edge 插件，持续比对出口 IP、DNS 与 WebRTC 基准 / Chrome/Edge extension for exit IP, DNS, and WebRTC baseline monitoring |
 | 代理方案参考 | [iprisk.top/proxy](https://iprisk.top/proxy) | 按 AI、电商、社媒和固定出口场景整理代理/VPS/环境工具 / Proxy, VPS, and browser-environment options organized by use case |
+| 批量查询 | [iprisk.top/batch](https://iprisk.top/batch) | 支持批量提交 IP、查看任务进度和导出检测结果 / Submit IPs in batches, track job progress, and export results |
+| API | [iprisk.top/api](https://iprisk.top/api) | 面向系统集成和自动化检测的 REST API，返回统一的结构化结果 / REST API for system integration and automated checks with consistent structured results |
+| 控制台 | [iprisk.top/console](https://iprisk.top/console) | 管理 API Key、套餐额度、批量任务、调用和账单 / Manage API keys, plan credits, batch jobs, usage, and billing |
 | 安全学院 | [iprisk.top/academy](https://iprisk.top/academy) | IP 信誉、代理类型、DNS/WebRTC 泄露和环境排查指南 / Guides for IP reputation, proxy types, DNS/WebRTC leaks, and environment checks |
+
+---
+
+## 使用方式 / Ways to Use
+
+| 使用方式 / Access | 说明 / Description |
+|---|---|
+| 网页检测 / Web check | 未登录用户每小时可免费检测 10 次，登录后每小时可免费检测 30 次 / Visitors receive 10 free checks per hour; signed-in users receive 30 |
+| 专业功能 / Professional features | 订阅用户可使用批量查询、API 和更高用量 / Subscribers can use batch queries, API access, and higher usage allowances |
+
+免费与订阅用户使用相同的数据来源和评分标准。
+
+Free and subscribed users receive the same data sources and scoring standards.
 
 ---
 
@@ -93,12 +109,10 @@ Each check queries independent source categories covering network classification
 
 | 类型 / Type | 当前使用的来源 / Current Sources |
 |---|---|
-| IP 类型与地理位置 / Network type & geolocation | ipapi.is, ip-api.com, ipinfo.io, IP2Location, proxycheck.io |
-| ASN / BGP / 网段 / ASN, BGP & prefix | RIPE STAT, ipapi.is, proxycheck.io |
-| 代理 / VPN / Tor / Proxy, VPN & Tor | proxycheck.io, TorProject, ipapi.is, ip-api.com, IP2Location, Scamalytics, Maltiverse |
-| 威胁情报 / Threat intelligence | Pulsedive, ThreatFox, DShield, Maltiverse |
-| 黑名单与滥用 / Blacklists & abuse | DNSBL, Blocklist.de, DShield, Scamalytics |
-| 端口与共享暴露 / Port & shared-host exposure | Shodan, HackerTarget |
+| 注册、路由与网络属性 / Registry, routing & network identity | RIR RDAP, IPinfo, IP2Location, RIPEstat, Team Cymru, ipapi.com, ipapi.is |
+| 代理、VPN、Tor 与欺诈信号 / Proxy, VPN, Tor & fraud signals | IP2Location, proxycheck.io, ipapi.com, ipapi.is, Scamalytics, Tor Project |
+| 黑名单、滥用与威胁情报 / Blacklist, abuse & threat intelligence | Spamhaus DROP, IPsum, Feodo Tracker, DShield, Blocklist.de |
+| 公网服务暴露 / Internet service exposure | Shodan InternetDB |
 
 不同来源的结果可能有延迟或分歧。IPRisk 会保留来源明细，方便用户查看每个结论来自哪里。
 
@@ -154,11 +168,10 @@ https://iprisk.top/badge/card/YOUR_IP
 - 🔍 [浏览器环境检测](https://iprisk.top/env)
 - 🧩 [浏览器插件 IPRisk Sentinel](https://iprisk.top/extension)
 - 🛡️ [代理方案参考 / Proxy Guide](https://iprisk.top/proxy)
+- 📊 [批量查询](https://iprisk.top/batch)
+- 🔌 [API 文档](https://iprisk.top/api)
+- 🖥️ [控制台](https://iprisk.top/console)
 - 📖 [安全学院 Q&A](https://iprisk.top/academy)
 - 📝 [关于 IPRisk.top](https://iprisk.top/about)
 - 🤖 [Telegram Bot — 发送 IP 即查纯净度](https://t.me/iprisk_top_bot)
 - 📢 [Telegram 频道 — IP 情报与网络排查](https://t.me/iprisk_top_channel)
-
----
-
-*欢迎提交 PR 补充更多工具和资源。/ PRs welcome to add more tools and resources.*

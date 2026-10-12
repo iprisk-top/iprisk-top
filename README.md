@@ -22,6 +22,10 @@ IPRisk.top is a free IP reputation checker. Enter any public IP address to revie
 
 The score helps you understand currently observable IP reputation signals before using a proxy, VPS, fixed IP, browser profile, or cross-border workflow. It is not an approval, login, registration, payment, or traffic guarantee from any third-party platform.
 
+需要重复查看当前出口时，可安装 IPRisk Sentinel：连接账号后直接查询当前 IP 纯净度与常用平台适用性，需要完整评分证据时可带入当前 IP 前往网站深度检测；插件还会自动监测浏览器网络环境并在发现异常时提醒。
+
+For repeat checks, IPRisk Sentinel lets you check current IP cleanliness and common-platform suitability using official-region and browser signals, send the current IP to the website for a detailed check, and monitor the browser environment automatically.
+
 ---
 
 ## 为什么做这个 / Why this exists
@@ -52,7 +56,7 @@ Most IP checkers rely on one source. The same IP may be labeled residential by o
 |---|---|---|
 | IP 纯净度检测 | [iprisk.top](https://iprisk.top) | 16 个独立来源交叉检测 IP 纯净度评分（0-100）/ Cross-checks 16 independent sources for a 0-100 IP reputation score |
 | 浏览器环境检测 | [iprisk.top/env](https://iprisk.top/env) | 出口 IP、WebRTC、DNS、时区、语言与浏览器环境一致性检测 / Exit IP, WebRTC, DNS, timezone, language, and browser-environment consistency checks |
-| 浏览器插件 | [iprisk.top/extension](https://iprisk.top/extension) | Chrome/Edge 插件，持续比对出口 IP、DNS 与 WebRTC 基准 / Chrome/Edge extension for exit IP, DNS, and WebRTC baseline monitoring |
+| 浏览器插件 | [iprisk.top/extension](https://iprisk.top/extension) | Chrome 插件，可随时查询当前 IP 纯净度并自动监测浏览器网络环境 / Chrome extension for checking current IP cleanliness anytime and automatically monitoring the browser network environment |
 | 代理方案参考 | [iprisk.top/proxy](https://iprisk.top/proxy) | 按 AI、电商、社媒和固定出口场景整理代理/VPS/环境工具 / Proxy, VPS, and browser-environment options organized by use case |
 | 批量查询 | [iprisk.top/batch](https://iprisk.top/batch) | 支持批量提交 IP、查看任务进度和导出检测结果 / Submit IPs in batches, track job progress, and export results |
 | API | [iprisk.top/api](https://iprisk.top/api) | 面向系统集成和自动化检测的 REST API，返回统一的结构化结果 / REST API for system integration and automated checks with consistent structured results |
@@ -66,6 +70,7 @@ Most IP checkers rely on one source. The same IP may be labeled residential by o
 | 使用方式 / Access | 说明 / Description |
 |---|---|
 | 网页检测 / Web check | 未登录用户滚动 24 小时可免费检测 10 次，登录后可免费检测 30 次 / Visitors receive 10 free checks per rolling 24 hours; signed-in users receive 30 |
+| 浏览器插件 / Browser extension | 连接账号后查询当前 IP 纯净度和常用平台适用性，支持带入 IP 前往网站深度检测，并自动监测浏览器网络环境 / Check current IP cleanliness and common-platform suitability, open a detailed website check, and monitor the browser environment automatically |
 | 专业功能 / Professional features | 订阅用户可使用批量查询、API 和更高用量 / Subscribers can use batch queries, API access, and higher usage allowances |
 
 免费与订阅用户使用相同的数据来源和评分标准。

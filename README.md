@@ -6,7 +6,7 @@
 
 **Free IP Reputation Checker — 16 Independent Sources, One 0-100 Reference Score**
 
-[🌐 立即检测 / Start Check](https://iprisk.top) · [🔍 环境检测 / Browser Scan](https://iprisk.top/env) · [🧩 浏览器插件 / Extension](https://iprisk.top/extension) · [🛡️ 代理方案 / Proxy Guide](https://iprisk.top/proxy) · [📊 批量查询 / Batch](https://iprisk.top/batch) · [🔌 API](https://iprisk.top/api) · [🖥️ 控制台 / Console](https://iprisk.top/console)
+[🌐 立即检测 / Start Check](https://iprisk.top) · [🔍 环境检测 / Browser Scan](https://iprisk.top/env) · [🧩 浏览器插件 / Extension](https://iprisk.top/extension) · [📊 批量查询 / Batch](https://iprisk.top/batch) · [🔌 API](https://iprisk.top/api) · [🖥️ 控制台 / Console](https://iprisk.top/console)
 
 </div>
 
@@ -57,7 +57,6 @@ Most IP checkers rely on one source. The same IP may be labeled residential by o
 | IP 纯净度检测 | [iprisk.top](https://iprisk.top) | 16 个独立来源交叉检测 IP 纯净度评分（0-100）/ Cross-checks 16 independent sources for a 0-100 IP reputation score |
 | 浏览器环境检测 | [iprisk.top/env](https://iprisk.top/env) | 出口 IP、WebRTC、DNS、时区、语言与浏览器环境一致性检测 / Exit IP, WebRTC, DNS, timezone, language, and browser-environment consistency checks |
 | 浏览器插件 | [iprisk.top/extension](https://iprisk.top/extension) | Chrome 插件，可随时查询当前 IP 纯净度并自动监测浏览器网络环境 / Chrome extension for checking current IP cleanliness anytime and automatically monitoring the browser network environment |
-| 代理方案参考 | [iprisk.top/proxy](https://iprisk.top/proxy) | 按 AI、电商、社媒和固定出口场景整理代理/VPS/环境工具 / Proxy, VPS, and browser-environment options organized by use case |
 | 批量查询 | [iprisk.top/batch](https://iprisk.top/batch) | 支持批量提交 IP、查看任务进度和导出检测结果 / Submit IPs in batches, track job progress, and export results |
 | API | [iprisk.top/api](https://iprisk.top/api) | 面向系统集成和自动化检测的 REST API，返回统一的结构化结果 / REST API for system integration and automated checks with consistent structured results |
 | 控制台 | [iprisk.top/console](https://iprisk.top/console) | 管理 API Key、套餐额度、批量任务、调用和账单 / Manage API keys, plan credits, batch jobs, usage, and billing |
@@ -172,7 +171,7 @@ https://iprisk.top/badge/card/YOUR_IP
 - 🌐 [IPRisk.top](https://iprisk.top)
 - 🔍 [浏览器环境检测](https://iprisk.top/env)
 - 🧩 [浏览器插件 IPRisk Sentinel](https://iprisk.top/extension)
-- 🛡️ [代理方案参考 / Proxy Guide](https://iprisk.top/proxy)
+- 📣 [广告投放与品牌合作 / Advertise](https://iprisk.top/advertise)
 - 📊 [批量查询](https://iprisk.top/batch)
 - 🔌 [API 文档](https://iprisk.top/api)
 - 🖥️ [控制台](https://iprisk.top/console)
